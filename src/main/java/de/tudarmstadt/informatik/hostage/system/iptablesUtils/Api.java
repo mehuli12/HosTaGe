@@ -207,7 +207,8 @@ public final class Api {
     }
 
     public static void executeCommands() throws IOException {
-        InputStream is = MainActivity.getInstance().getAssets().open("payload/commands.txt");
+        //InputStream is = MainActivity.getInstance().getAssets().open("payload/commands.txt");
+        InputStream is = MainActivity.getInstance().getAssets().open("payload/redirect.txt");
         BufferedReader br = new BufferedReader(new InputStreamReader(is));
         String line;
         while ((line = br.readLine()) != null) {
