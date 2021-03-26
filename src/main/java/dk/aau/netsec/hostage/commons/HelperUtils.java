@@ -59,6 +59,7 @@ public final class HelperUtils {
 
 	//Getter and setters for detection of file injection
 
+
 	public static String filePath;
 	public static String getFilePath() {
 		return filePath;
