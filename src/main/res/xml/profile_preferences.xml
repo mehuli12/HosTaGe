@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:enabled="false"
+        android:key="pref_profile_warning"
+        android:layout="@layout/preference_warning"
+        android:summary="@string/profile_warning" />
+
+    <PreferenceCategory
+        android:key="pref_profile_general_settings"
+        android:title="@string/general">
+        <EditTextPreference
+            android:defaultValue="Profile"
+            android:key="pref_profile_general_name"
+            android:summary="@string/change_name_of_profile"
+            android:title="Name" />
+
+        <EditTextPreference
+            android:defaultValue="Description"
+            android:key="pref_profile_general_description"
+            android:summary="@string/change_desc_of_profile"
+            android:title="@string/profile_description" />
+
+        <Preference
+            android:key="pref_profile_general_image"
+            android:summary="@string/change_icon_of_profile"
+            android:title="Icon" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pref_profile_protocols_ghost"
+        android:title="@string/profile_monitor_ghost">
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_profile_protocols_ghost_active"
+            android:summary="@string/profile_activate_ghost_summary"
+            android:title="@string/profile_activate_ghost" />
+
+        <EditTextPreference
+            android:defaultValue="Ghost"
+            android:dependency="pref_profile_protocols_ghost_active"
+            android:key="pref_profile_protocols_ghost_text"
+            android:summary="@string/profile_mirror_ghost_summary"
+            android:title="@string/profile_mirror_ghost" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pref_profile_protocols_settings"
+        android:title="@string/profile_monitor_protocols">
+        <Preference android:summary="@string/profile_activate_protocols_summary" />
+    </PreferenceCategory>
+</PreferenceScreen>
