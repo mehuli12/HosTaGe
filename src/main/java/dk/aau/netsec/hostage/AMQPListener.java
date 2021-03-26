@@ -20,6 +20,8 @@ public class AMQPListener extends Listener {
     private boolean running = false;
     private int defaultPort =5672;
 
+    //hello
+
     private static Semaphore mutex = new Semaphore(1);
     /**
      * Constructor for the class. Instantiate class variables.
