@@ -83,8 +83,6 @@
             android:name="dk.aau.netsec.hostage.sync.tracing.TracingSyncActivity"
             android:label="@string/gui_tracing"
             android:theme="@android:style/Theme.Holo.Dialog" >
-
-
         </activity>
         <activity
             android:screenOrientation="portrait"
